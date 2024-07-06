@@ -10,11 +10,11 @@ const App = () => {
     setselectedOption(e)
   }
   return (
-    <div style={{ backgroundColor: "#73ff00", padding: "1rem" }}>
+    <div className="parent" style={{ backgroundColor: "#73ff00", padding: "1rem" }}>
       <h1>Parent Component</h1>
       <ChildComponent1 handleSelect={handleSelect} />
       <ChildComponent2 handleSelect={handleSelect} />
-      <p>Select Option: {selectedOption}</p>
+      <p>Selected Option: {selectedOption}</p>
     </div>
   );
 };
